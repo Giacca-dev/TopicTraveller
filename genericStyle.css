@@ -9,3 +9,52 @@ header{
 
 footer{
 }
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 5%;
+    right: 5%;
+    display: none;
+  }
+
+.menu-bar{
+    position: fixed;
+    left: 2%;
+    bottom: 50%;
+  }
+
+.custom-shape-divider-bottom{
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(133% + 1.3px);
+    height: 83px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom .shape-fill {
+    fill: #FFFFFF;
+}
+
+.custom-shape-divider-top {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top svg {
+    position: relative;
+    display: block;
+    width: calc(170% + 1.3px);
+    height: 71px;
+}
+
+.custom-shape-divider-top .shape-fill {
+    fill: #FFFFFF;
+}
