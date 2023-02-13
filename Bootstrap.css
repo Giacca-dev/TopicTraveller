@@ -8054,7 +8054,7 @@ background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .fs-1:hover, .fs-1:focus {
-  color: var(--bs-nav-link-hover-color) !important;
+  color: var(--bs-link-hover-color) !important;
 }
 
 .fs-2 {
