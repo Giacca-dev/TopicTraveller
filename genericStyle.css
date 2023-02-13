@@ -3,30 +3,9 @@ body{
 }
 
 header{
-backgroud-color: white !important;
 }
 
 
 
 footer{
-backgroud-color: white !important;
-}
-
-h1{
-
-}
-
-div{
-
-}
-
-#btn-back-to-top {
-  position: fixed;
-  bottom: 5%;
-  right: 5%;
-  display: none;
-}
-
-.container{
-  backgroud-color: white !important;
 }
