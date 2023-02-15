@@ -8,9 +8,22 @@
   </head>
 
   <body>
-    <header class="d-flex flex-wrap justify-content-center pt-3" style="background-color: #625e59;">
-      <a class="d-flex align-items-center text-dark text-decoration-none" href="#">
-        <span class="fs-1 fw-bold text-white center">Topic Travel</span></a>
+    <header class="d-flex flex-wrap justify-content-center pt-3" style="background-color: #625e59;">  
+      <a class="d-flex align-items-center text-dark text-decoration-none" href="#"><span class="fs-1 fw-bold text-white center">Topic Travel</span></a>
+        <ul class="nav col-md-4 d-flex justify-content-center">
+          <li class="ms-3"><a type="button" class="nav-link" href="#" style="border: 0;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+          </svg></a></li>
+          <li class="ms-3"><a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#login">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+              <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+              <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+            </svg>
+          </a></li>
+        </ul>
+        
+        
+
         <ul class="nav nav-pills menu-bar">
           <div>
           <li class="nav-item" style="margin: 2px;">
@@ -31,7 +44,64 @@
 
 
     <div class="container mt-4 p-5 rounded shadow">
-      <h1 class="animate__animated animate__flip">https://animate.style/</h1>
+
+      <div class="row">
+        <div class="col-md-7">
+          <div class="container rounded">
+            <h1 class="animate__animated animate__bounce">Ricerca il tuo Topic</h1>
+            <div class="input-group">
+              <input type="search" class="form-control rounded" placeholder="Cerca li tuo interesse" aria-label="Search" aria-describedby="search-addon" />
+            </div>
+            <div class="btn btn-primary mt-2" href="#" style="width:100%;">Cerca</div>
+
+          </div>
+
+
+        </div>
+        <div class="col-md-5">
+
+          <div class="container">
+            <div class="container mt-4 p-5 rounded shadow" style="background-color: #625e59;">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <div class="container mt-4 p-5 rounded shadow">
+
+      <div class="row">
+        <div class="col-md-7">
+          <div class="container rounded">
+            <h1 class="animate__animated animate__bounce">Ricerca il tuo Topic</h1>
+            <div class="input-group">
+              <input type="search" class="form-control rounded-start" placeholder="Cerca li tuo interesse" aria-label="Search" aria-describedby="search-addon" />
+              <button type="button" class="btn btn-outline-primary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg></button>
+            </div>
+            <div class="btn btn-primary mt-2" href="#">Cerca</div>
+          </div>
+
+
+        </div>
+        <div class="col-md-5">
+
+          <div class="container rounded">
+            
+          </div>
+
+        </div>
+      </div>
 
     </div>
 
@@ -51,10 +121,49 @@
 
 
 
+
     
+<!-- Modal -->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg> Login</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+      
+          <div class="checkbox mb-3">
+            <label class="center" style="text-align: center;">
+              <input type="checkbox" value="remember-me"> Ricordami
+            </label>
+          </div>
+          <button class="w-100 btn btn-lg btn-primary mb-1" type="submit">Accedi</button>
+          <div class="modal-footer p-0">
+
+            <button class="w-100 btn btn-lg btn-primary mx-0" type="submit">Registrati</button>
+          </div>    
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
+    
     <button type="button" class="btn btn-primary btn-floating btn-lg rounded-5" id="btn-back-to-top" style="border: 0;">
       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-up-fill" viewBox="0 0 16 16">
   <path d="m7.247 4.86-4.796 5.481c-.566.647-.106 1.659.753 1.659h9.592a1 1 0 0 0 .753-1.659l-4.796-5.48a1 1 0 0 0-1.506 0z"/>
