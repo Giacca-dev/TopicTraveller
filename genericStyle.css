@@ -5,7 +5,11 @@
     display: none;
   }
 
-  
+.card:hover {
+    z-index: 1 !important;
+    z-index: 1;
+border: solid white 4px;
+}
 
 .menu-bar{
     position: fixed;
