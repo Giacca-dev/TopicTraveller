@@ -12,13 +12,18 @@
       <div class="container text-center w-100">
         <div class="row align-items-center">
           <div class="col">
+            <button class="btn btn-primary border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+              </svg>
+              </button>
           </div>
           <div class="col">
             <a class="text-dark text-decoration-none" href="#"><span class="fs-1 fw-bold center">Topic Travel</span></a>
           </div>
           <div class="col">
             <ul class="nav">
-        <li class="ms-3"><a type="button" class="nav-link" href="#" style="border: 0;"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+        <li class="ms-3"><a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#search"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
           <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
         </svg></a></li>
         <li class="ms-3"><a type="button" class="nav-link" data-bs-toggle="modal" data-bs-target="#login">
@@ -54,10 +59,12 @@
     
 
 
-    <div class="container mt-4 p-5 rounded shadow">
+    <div class="container mt-4 p-5 rounded shadow" id="Ricerca">
 
       <div class="row">
-        <h1 class="px-4">Ricerca il tuo Topic</h1>
+        <div>
+          <h1 class="px-4">Ricerca il tuo Topic</h1>
+        </div>
         <div class="col-md-7 mb-2">
           <div class="container">
             <div class="container p-5 rounded shadow" style="background-color: #625e59;">
@@ -233,11 +240,10 @@
 
     </div>
     <div class="col-md-5">
-      <img src="Media/Logo/logo_WT.png" class="center" width="150px" href="#" alt="Logo">
       <div class="container rounded center">
             <div class="p-5 mb-2 bg-light border rounded-3">
-              <label for="Provincia" class="form-label">Per regione</label>
-                <select class="form-select" id="provincia" required="">
+              <h2 for="Provincia" class="form-label">Filtra per regione</label>
+                <select class="form-select mt-2" id="provincia" required="">
                     <option value="">Scegli...</option>
                     <option>Marche</option>
                 </select>
@@ -246,6 +252,8 @@
                 </div>
 
           </div>
+          <img src="Media/Logo/logo_WT.png" class="center" width="150px" href="#" alt="Logo">
+          
 
 
         <div class="input-group">
@@ -262,14 +270,14 @@
 
 
 
-    <div class="container mt-4 p-5 rounded shadow" id="AboutUs">
+    <div class="container mt-4 p-5 rounded shadow" id="Esperienze">
         <h1 class="px-4">Migliori esperienze</h1>
         <div class="row">
           <div class="col-md-6 col-sm-12">
             <p>Benvenuto alla nostra agenzia di viaggi unica nel suo genere! Siamo specializzati nell'organizzazione di viaggi che offrono l'opportunità di imparare e praticare nuove competenze in prima persona. La nostra agenzia si distingue per l'attenzione che poniamo sull'esperienza del cliente, il divertimento e la formazione durante i nostri viaggi.</p>
           </div>
           <div class="col-md-6 col-sm-12">
-            <img src="Media/Home/Carousel/Fotografia.jpg" class="d-block rounded-circle center" alt="Fotografia"style="width: 250px;">
+            <img src="Media/Home/Carousel/Fotografia.jpg" class="d-block rounded center" alt="Fotografia"style="width: 250px;">
           </div>
           <hr class="my-2">
           <div class="col-sm-12">
@@ -322,15 +330,26 @@
     </div>
 
 
-    <div class="container mt-4 p-5 rounded shadow" id="AboutUS">
-        <h1>Chi siamo</h1>
-        <p>Benvenuto alla nostra agenzia di viaggi unica nel suo genere! Siamo specializzati nell'organizzazione di viaggi che offrono l'opportunità di imparare e praticare nuove competenze in prima persona. La nostra agenzia si distingue per l'attenzione che poniamo sull'esperienza del cliente, il divertimento e la formazione durante i nostri viaggi.</p>
-    </div>
-
-    <div class="container mt-4 p-5 rounded shadow" id="AboutUS">
+    <div class="container mt-4 p-5 rounded shadow" id="Recensioni">
       <h1>Chi siamo</h1>
       <p>Benvenuto alla nostra agenzia di viaggi unica nel suo genere! Siamo specializzati nell'organizzazione di viaggi che offrono l'opportunità di imparare e praticare nuove competenze in prima persona. La nostra agenzia si distingue per l'attenzione che poniamo sull'esperienza del cliente, il divertimento e la formazione durante i nostri viaggi.</p>
   </div>
+
+
+    <div class="container mt-4 p-5 rounded shadow" id="AboutUS">
+        <h1>Chi siamo</h1>
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <img src="Media/Home/Carousel/Fotografia.jpg" class="d-block rounded-circle center" alt="Fotografia" style="width: 250px;">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <p>Benvenuto alla nostra agenzia di viaggi unica nel suo genere! Siamo specializzati nell'organizzazione di viaggi che offrono l'opportunità di imparare e praticare nuove competenze in prima persona. La nostra agenzia si distingue per l'attenzione che poniamo sull'esperienza del cliente, il divertimento e la formazione durante i nostri viaggi.</p>
+            <a class="btn btn-outline-primary" href="">Scopri di più</a>
+          </div>
+        </div>
+    </div>
+
+   
 
 
 </div>
@@ -352,8 +371,19 @@
 
 
 
+
+<!-- Menu -->  
+  <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+    </div>
+  </div>
+
     
-<!-- Modal -->
+<!-- Modal account-->
 <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -386,6 +416,30 @@
             <button class="w-100 btn btn-lg btn-primary mx-0" type="submit">Registrati</button>
           </div>    
         </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal cerca-->
+<div class="modal fade" id="search" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg> Cerca nel sito</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <div class="input-group">
+          <input type="search" class="form-control rounded-start" placeholder="Search" aria-label="Search" aria-describedby="search-addon" />
+          <button type="button" class="btn btn-outline-primary">search</button>
+        </div>
+
       </div>
     </div>
   </div>
