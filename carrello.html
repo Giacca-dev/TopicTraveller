@@ -41,22 +41,6 @@
         </div>
       </div>  
         
-        
-        
-
-        <ul class="nav nav-pills menu-bar">
-          <div>
-            <li class="nav-item" style="margin: 2px;">
-            <a style="text-align: center; background-color: white !important;" class="nav-link rounded-circle border" href="#Topics">Topics</a></li>
-          <li class="nav-item" style="margin: 2px;">
-            <a style="text-align: center; background-color: white !important;" class="nav-link rounded-circle border" href="#Esperienze">Esperienze</a></li>
-            <li class="nav-item" style="margin: 2px;">
-              <a style="text-align: center; background-color: white !important;" class="nav-link rounded-circle border" href="#ChiSiamo">Chi Siamo</a></li>
-           
-          
-          
-          </div>
-        </ul>
       <div class="custom-shape-divider-bottom">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -69,293 +53,138 @@
 
 
     <div class="container mt-4 p-5 rounded shadow" id="Topics">
-
-      <div class="row">
-        <div>
-          <h1 class="px-4">Ricerca il tuo Topic</h1>
+        <div class="pb-5 text-center">
+          <img class="d-block mx-auto mb-4" src="Media/Logo/logo_WT.png" alt="" width="150" height="150">
+          <h2>Pagamento</h2>
+          <p class="lead">Per effettuare il pagamento completare il form sottostante con i propri dati e confermare l'ordine.</p>
         </div>
-        <div class="col-md-7 mb-2">
-          <div class="container">
-            <div class="container p-5 rounded shadow" style="background-color: #625e59;">
-              <div class="row">
-                <h2>Passioni suggerite</h2>   
+    
+        <div class="row g-5">
+          <div class="col-md-5 col-lg-4">
+            <h4 class="d-flex justify-content-between align-items-center mb-3">
+              <span class="text-primary">Carrello</span>
+              <span class="badge bg-primary rounded-pill">3</span>
+            </h4>
+            <ul class="list-group mb-3">
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Nome prodotto</h6>
+                  <small class="text-muted">Mini descrizione</small>
+                </div>
+                <span class="text-muted">60€</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Nome prodotto</h6>
+                  <small class="text-muted">Mini descrizione</small>
+                </div>
+                <span class="text-muted">60€</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between lh-sm">
+                <div>
+                  <h6 class="my-0">Nome prodotto</h6>
+                  <small class="text-muted">Mini descrizione</small>
+                </div>
+                <span class="text-muted">80€</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between">
+                <span>Totale</span>
+                <strong>200€</strong>
+              </li>
+            </ul>
+            
+          </div>
+          <div class="col-md-7 col-lg-8">
+            <form class="needs-validation" novalidate="">
+              <div class="row g-3">
                 <div class="col-sm-6">
-
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Mele">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Mele
-                    </label>
+                  <label for="firstName" class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Nome valido richiesto!
                   </div>
-  
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Pere">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Pere
-                    </label>
+                </div>
+    
+                <div class="col-sm-6">
+                  <label for="lastName" class="form-label">Cognome</label>
+                  <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                  <div class="invalid-feedback">
+                    Cognome valido richiesto!
                   </div>
-  
+                </div>
+    
+                <div class="col-12">
+                  <label for="email" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="email" placeholder="nome@esempio.com" required="">
+                  <div class="invalid-feedback">
+                    Email valida richiesto!
+                  </div>
+                </div>
+    
+              <hr class="my-4">
+    
+              <h4 class="mb-3">Metodo di pagamento</h4>
+    
+              <div class="my-3">
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Insalata">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Insalata
-                    </label>
+                  <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked="" required="">
+                  <label class="form-check-label" for="credit">Carta di credito</label>
                 </div>
-  
                 <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Pomodori">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Pomodori
-                    </label>
+                  <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required="">
+                  <label class="form-check-label" for="paypal">PayPal</label>
                 </div>
-  
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Formaggi">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Formaggi
-                    </label>
+              </div>
+    
+              <div class="row gy-3">
+                <div class="col-md-6">
+                  <label for="cc-name" class="form-label">Nome sulla carta</label>
+                  <input type="text" class="form-control" id="cc-name" placeholder="" required="">
+                  <small class="text-muted">Full name as displayed on card</small>
+                  <div class="invalid-feedback">
+                    Campo richiesto per il pagamento
+                  </div>
                 </div>
-  
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Latte">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Latte
-                    </label>
+    
+                <div class="col-md-6">
+                  <label for="cc-number" class="form-label">Numero della carta</label>
+                  <input type="text" class="form-control" id="cc-number" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Campo richiesto per il pagamento
+                  </div>
                 </div>
-  
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Uova">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Uova
-                    </label>
+    
+                <div class="col-md-3">
+                  <label for="cc-expiration" class="form-label">Scadenza</label>
+                  <input type="text" class="form-control" id="cc-expiration" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Campo richiesto per il pagamento
+                  </div>
                 </div>
-  
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Gelato">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Gelato
-                    </label>
-                </div>
-  
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Tartufo">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Tartufo
-                    </label>
-                </div>
-  
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Cereali">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Cereali
-                    </label>
-                </div>
-  
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" value="" id="Bibite">
-                    <label class="form-check-label" for="flexCheckDefault">
-                    Bibite
-                    </label>
-                </div>
-            
-            </div>                     
-                    
-                
-
-
-          <div class="col-sm-6">
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Pane">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Pane
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Farina">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Farina
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Carne">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Carne
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Marmellata">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Marmellata
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Dolci">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Dolci
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Miele">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Miele
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Funghi">
-                  <label class="form-check-label" for="flexCheckDefault">
-                      Funghi
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Olio">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Olio
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Biscotti">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Biscotti
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Yougurt">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Yougurt
-                  </label>
-              </div>
-
-              <div class="form-check">
-                  <input class="form-check-input" type="checkbox" value="" id="Burro">
-                  <label class="form-check-label" for="flexCheckDefault">
-                  Burro
-                  </label>
-              </div>
-
-              </div>
-            </div>
-          </div>
-      </div>
-
-    </div>
-    <div class="col-md-5">
-      <div class="container rounded center">
-            <div class="p-5 mb-2 bg-light border rounded-3">
-              <h2 for="Provincia" class="form-label">Filtra per regione</label>
-                <select class="form-select mt-2" id="provincia" required="">
-                    <option value="">Scegli...</option>
-                    <option>Marche</option>
-                </select>
-                <div class="invalid-feedback">
-                    Selezionare una provincia valida.
-                </div>
-
-          </div>
-          <img src="Media/Logo/logo_WT.png" class="center" width="150px" href="#" alt="Logo">
-          
-
-
-        <div class="input-group">
-          <input type="search" class="form-control rounded" placeholder="Cerca li tuo interesse" aria-label="Search" aria-describedby="search-addon" />
-        </div>
-        <div class="btn btn-primary mt-2" href="#" style="width:100%;">Cerca</div>
-
-      </div>
-
-    </div>
-  </div></div>
-
-
-
-
-
-    <div class="container mt-4 p-5 rounded shadow" id="Esperienze">
-        <h1 class="px-4">Migliori esperienze</h1>
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <p>Benvenuto alla nostra agenzia di viaggi unica nel suo genere! Siamo specializzati nell'organizzazione di viaggi che offrono l'opportunità di imparare e praticare nuove competenze in prima persona. La nostra agenzia si distingue per l'attenzione che poniamo sull'esperienza del cliente, il divertimento e la formazione durante i nostri viaggi.</p>
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <img src="Media/Home/Carousel/Fotografia.jpg" class="d-block rounded center" alt="Fotografia"style="width: 250px;">
-          </div>
-          <hr class="my-2">
-          <div class="col-sm-12">
-            
-            <div class="row">
-              <div class="col-lg-3 col-sm-6">
-                <div class="card mt-2">
-                  <img src="Media/Home/Carousel/Fotografia.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
+    
+                <div class="col-md-3">
+                  <label for="cc-cvv" class="form-label">CVV</label>
+                  <input type="text" class="form-control" id="cc-cvv" placeholder="" required="">
+                  <div class="invalid-feedback">
+                    Campo richiesto per il pagamento
                   </div>
                 </div>
               </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="card mt-2">
-                  <img src="Media/Home/Carousel/Fotografia.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="card mt-2" >
-                  <img src="Media/Home/Carousel/Fotografia.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-3 col-sm-6">
-                <div class="card mt-2">
-                  <img src="Media/Home/Carousel/Fotografia.jpg" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                </div>
-              </div>
-            </div>
 
+              <hr class="my-4">
+    
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="save-info">
+                <label class="form-check-label" for="save-info">Salva queste informazioni per il futuro</label>
+              </div>
+    
+              <hr class="my-4">
+    
+              <button class="w-100 btn btn-primary btn-lg" type="submit" href="">Conferma pagamento</button>
+            </form>
           </div>
         </div>
     </div>
-
-
-    <div class="container mt-4 p-5 rounded shadow" id="ChiSiamo">
-        <h1>Chi siamo</h1>
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <img src="Media/Home/Carousel/Fotografia.jpg" class="d-block rounded-circle center" alt="Fotografia" style="width: 250px;">
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <p>Benvenuto alla nostra agenzia di viaggi unica nel suo genere! Siamo specializzati nell'organizzazione di viaggi che offrono l'opportunità di imparare e praticare nuove competenze in prima persona. La nostra agenzia si distingue per l'attenzione che poniamo sull'esperienza del cliente, il divertimento e la formazione durante i nostri viaggi.</p>
-            <a class="btn btn-outline-primary" href="">Scopri di più</a>
-          </div>
-        </div>
-    </div>
-
-   
-
-
-
 
 
 
@@ -479,7 +308,7 @@
     </div>
   </div>
 </div>
-
+</div>
 
 
     
