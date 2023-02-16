@@ -4939,7 +4939,6 @@ background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity));
   background-color: var(--bs-list-group-action-hover-bg);
 }
 .list-group-item-action:active {
-  color: var(--bs-list-group-action-active-color);
   background-color: var(--bs-list-group-action-active-bg);
 }
 
