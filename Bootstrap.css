@@ -787,6 +787,10 @@ progress {
 
 
 
+.center-text{
+  text-align: center;
+}
+
 .center {
   display: block;
   margin: auto;
