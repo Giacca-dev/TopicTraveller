@@ -49,6 +49,11 @@ border: solid white 4px;
     height: 71px;
 }
 
+.gallery:hover{
+    cursor: pointer;
+    width: 90% !important;
+}
+
 .custom-shape-divider-top .shape-fill {
     fill: #FFFFFF;
 }

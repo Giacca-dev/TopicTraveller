@@ -71,7 +71,8 @@
                   </svg>
                 </div>
                 <div class="col-sm-8">
-                  <h2>Nome, Cognome e mail</h2>
+                  <h2>Nome e Cognome</h2>
+                  <h3 class="text-muted">nome@mail.com</h3>
                 </div>
               </div>
             </div>
@@ -118,8 +119,26 @@
           </div>
           <div class="col-sm-12 col-md-3">
             <div class="container mt-4 p-5 rounded shadow">
-              <h2>Tipologie di passioni più scelte da te:</h2>
-              
+              <div class="row">
+                <h2>Proprie passioni</h2>
+                <div class="col">
+                  <a class="btn btn-primary p-2 rounded-circle" href="">passione1</a>
+                </div>
+                <div class="col">
+                  <a class="btn btn-primary p-2 rounded-circle" href="">passione1</a>
+                </div>
+                <div class="col">
+                  <a class="btn btn-primary p-2 rounded-circle" href="">passione1</a>
+                </div>
+              </div>
+              <hr>
+              <div class="row">
+                <a class="h6 text-decoration-none" href="">Impostazioni</a>
+                <hr>
+                <a type="button" class="h6 text-decoration-none" data-bs-toggle="modal" data-bs-target="#contact">
+                  Contattaci
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -223,6 +242,32 @@
   </div>
     </div>
 
+
+    <!-- Modal contact Us-->
+    <div class="modal fade" id="contact" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-left-text-fill" viewBox="0 0 16 16">
+              <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H4.414a1 1 0 0 0-.707.293L.854 15.146A.5.5 0 0 1 0 14.793V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+            </svg> Contattaci</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p class="text-center">Puoi usare questo form per effettuare richieste direttamente allo staff di Topic Travel</p>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email mittente</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@esempio.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Area messaggio</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <a type="submit" class="btn btn-outline-primary text-center w-100" href="">Invia</a>
+          </div>
+        </div>
+      </div>
+        </div>
 
 
     <!-- Modal cerca-->
