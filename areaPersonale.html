@@ -204,8 +204,8 @@
 </div>
 
     
-    <!-- Modal account-->
-    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <!-- Modal account-->
+<div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
@@ -231,16 +231,54 @@
               <input type="checkbox" value="remember-me"> Ricordami
             </label>
           </div>
-          <button class="w-100 btn btn-lg btn-primary mb-1" type="submit" href="">Accedi</button>
+          <a class="w-100 btn btn-lg btn-primary mb-1" href="areaPersonale.html">Accedi</a>
           <div class="modal-footer p-0">
 
-            <button class="w-100 btn btn-lg btn-primary mx-0" type="submit">Registrati</button>
+            <a class="w-100 btn btn-lg btn-primary mx-0" data-bs-toggle="modal" data-bs-target="#registra">Registrati</a>
           </div>    
         </form>
       </div>
     </div>
   </div>
+</div>
+
+
+<!-- Modal registrazione-->
+<div class="modal fade" id="registra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+          <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+          <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+        </svg> Registrati</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-floating mt-2">
+            <input type="name" class="form-control" id="floatingInput" placeholder="nome">
+            <label for="floatingInput">nome</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="name" class="form-control" id="floatingInput" placeholder="cognome">
+            <label for="floatingInput">Cognome</label>
+          </div>
+          <div class="form-floating mt-2">
+            <input type="email" class="form-control" id="floatingInput" placeholder="nome@esempio.com">
+            <label for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating my-2">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Password</label>
+          </div>
+            <a class="w-100 btn btn-lg btn-primary mx-0" href="areaPersonale.html">Registrati</a>
+          </div>    
+        </form>
+      </div>
     </div>
+  </div>
+</div>
 
 
     <!-- Modal contact Us-->
