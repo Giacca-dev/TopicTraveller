@@ -49,6 +49,10 @@ border: solid white 4px;
     height: 71px;
 }
 
+.colorized{
+    color: #2b4570;
+}
+
 .gallery:hover{
     cursor: pointer;
     width: 90% !important;
